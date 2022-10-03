@@ -1,1 +1,0 @@
-{"version":3,"file":"getUserProfile.js","sourceRoot":"","sources":["../../../../../src/routes/get/getUserProfile.ts"],"names":[],"mappings":";;;AAiBO,MAAM,cAAc,GAAG,CAAC,EAC7B,MAAM,EACN,MAAM,GAIP,EAAE,EAAE;IACH,OAAO,MAAM,CAAgD;QAC3D,KAAK,EAAE,QAAQ,MAAM,UAAU;QAC/B,MAAM,EAAE,KAAK;KACd,CAAC,CAAC;AACL,CAAC,CAAC;AAXW,QAAA,cAAc,kBAWzB"}
