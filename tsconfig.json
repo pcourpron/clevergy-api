@@ -9,7 +9,6 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "outDir": "./dist",
-    "rootDir": "../",
     "baseUrl": "./",
     "paths": {
       "*": ["node_modules/*", "node_modules/@types/*"]
@@ -17,5 +16,5 @@
     "composite": true
   },
   "exclude": ["node_modules", "coverage", "dist", "/**/*.test.ts"],
-  "include": ["./src"]
+  "include": ["./index.ts", "./src"]
 }

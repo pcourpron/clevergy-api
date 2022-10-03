@@ -1,1 +1,1 @@
-export { buildClevergyApiSdk } from "./src";
+export * from "./src";
