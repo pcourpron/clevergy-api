@@ -9,6 +9,7 @@ import {
   getUserProfile,
   GetUserProfileRequest,
   GetUserProfileResponse,
+  updateTip,
 } from "./routes";
 import {
   getHouseConsumptionDetails,
@@ -16,6 +17,10 @@ import {
   GetHouseConsumptionDetailsResponse,
 } from "./routes/get/getHouseConsumptionDetails";
 import { GetTipRequest, GetTipResponse, getTip } from "./routes/get/getTips";
+import {
+  UpdateTipCommandRequest,
+  UpdateTipCommandResponse,
+} from "./routes/post/updateTip";
 import {
   userRegistration,
   UserRegistrationCommandRequest,
@@ -40,6 +45,7 @@ export interface ClevergySdk {
     UserRegistrationCommandRequest,
     UserRegistrationCommandResponse
   >;
+  updateTip: ClevergySdkApi<UpdateTipCommandRequest, UpdateTipCommandResponse>;
 }
 export * from "./types";
 
@@ -64,6 +70,9 @@ export const buildClevergyApiSdk = (token?: string) => {
     },
     getHouseProfile: ({ payload: { cups, date } }) => {
       return getHouseProfiler({ cups, date, client });
+    },
+    updateTip: ({ payload }) => {
+      return updateTip({ ...payload, client });
     },
   };
 
