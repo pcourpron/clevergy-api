@@ -23,6 +23,7 @@ export interface ClevergySdk {
     GetHouseConsumptionDetailsResponse
   >;
 }
+export * from "./types";
 
 export const buildClevergyApiSdk = (token?: string) => {
   const { client, setToken } = buildClevergyHttpClient(token);

@@ -1,6 +1,6 @@
 {
   "name": "clevergy-sdk",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Clevergy SDK",
   "main": "dist/sdk/index.js",
   "types": "dist/sdk/index.d.ts",
