@@ -1,5 +1,8 @@
 import { buildClevergyHttpClient } from "./httpClient";
 import {
+  getHouseProfiler,
+  GetHouseProfilerRequest,
+  GetHouseProfilerResponse,
   getUserHouses,
   GetUserHousesRequest,
   GetUserHousesResponse,
@@ -12,6 +15,12 @@ import {
   GetHouseConsumptionDetailsRequest,
   GetHouseConsumptionDetailsResponse,
 } from "./routes/get/getHouseConsumptionDetails";
+import { GetTipRequest, GetTipResponse, getTip } from "./routes/get/getTips";
+import {
+  userRegistration,
+  UserRegistrationCommandRequest,
+  UserRegistrationCommandResponse,
+} from "./routes/post/userRegistration";
 
 import { ClevergySdkApi } from "./types";
 
@@ -21,6 +30,15 @@ export interface ClevergySdk {
   getHouseConsumptionDetails: ClevergySdkApi<
     GetHouseConsumptionDetailsRequest,
     GetHouseConsumptionDetailsResponse
+  >;
+  getTip: ClevergySdkApi<GetTipRequest, GetTipResponse>;
+  getHouseProfile: ClevergySdkApi<
+    GetHouseProfilerRequest,
+    GetHouseProfilerResponse
+  >;
+  userRegistration: ClevergySdkApi<
+    UserRegistrationCommandRequest,
+    UserRegistrationCommandResponse
   >;
 }
 export * from "./types";
@@ -37,6 +55,15 @@ export const buildClevergyApiSdk = (token?: string) => {
     },
     getHouseConsumptionDetails: ({ payload: { cups, endDate, startDate } }) => {
       return getHouseConsumptionDetails({ cups, endDate, startDate, client });
+    },
+    getTip: ({ payload: { cups } }) => {
+      return getTip({ cups, client });
+    },
+    userRegistration: ({ payload: { name, surname, dni } }) => {
+      return userRegistration({ name, surname, dni, client });
+    },
+    getHouseProfile: ({ payload: { cups, date } }) => {
+      return getHouseProfiler({ cups, date, client });
     },
   };
 

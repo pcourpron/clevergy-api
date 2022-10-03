@@ -1,16 +1,13 @@
 {
   "name": "clevergy-sdk",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Clevergy SDK",
-  "main": "dist/sdk/index.js",
-  "types": "dist/sdk/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pcourpron/clevergy-api"
   },
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "build": "tsc --build",
     "version": "npm run build",

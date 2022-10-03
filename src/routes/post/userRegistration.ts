@@ -27,7 +27,7 @@ export type UserRegistrationCommandResponse = ClevergyApiResponse<{
   }[];
 }>;
 
-export const getHouseConsumptionDetails = ({
+export const userRegistration = ({
   client,
   ...payload
 }: {
