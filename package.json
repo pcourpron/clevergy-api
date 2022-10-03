@@ -1,12 +1,12 @@
 {
   "name": "clevergy-sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Clevergy SDK",
   "main": "dist/sdk/index.js",
   "types": "dist/sdk/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Clevergy/clevergy-sdk.git"
+    "url": "git+https://github.com/pcourpron/clevergy-api"
   },
   "files": [
     "dist"
