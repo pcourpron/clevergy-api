@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
+    "lib": ["es2019", "DOM"],
+    "declaration": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "rootDir": "../",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules/*", "node_modules/@types/*"]
+    },
+    "composite": true
+  },
+  "exclude": ["node_modules", "coverage", "dist", "/**/*.test.ts"],
+  "include": ["./src"]
+}

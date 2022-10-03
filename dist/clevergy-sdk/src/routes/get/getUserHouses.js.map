@@ -1,0 +1,1 @@
+{"version":3,"file":"getUserHouses.js","sourceRoot":"","sources":["../../../../../src/routes/get/getUserHouses.ts"],"names":[],"mappings":";;;AAoBO,MAAM,aAAa,GAAG,CAAC,EAC5B,MAAM,EACN,MAAM,GAIP,EAAE,EAAE;IACH,OAAO,MAAM,CAA8C;QACzD,KAAK,EAAE,SAAS,MAAM,SAAS;QAC/B,MAAM,EAAE,KAAK;KACd,CAAC,CAAC;AACL,CAAC,CAAC;AAXW,QAAA,aAAa,iBAWxB"}

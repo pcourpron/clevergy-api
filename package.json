@@ -1,0 +1,28 @@
+{
+  "name": "clevergy-sdk",
+  "version": "0.1.0",
+  "description": "Clevergy SDK",
+  "main": "dist/sdk/index.js",
+  "types": "dist/sdk/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clevergy/clevergy-sdk.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "version": "npm run build",
+    "postversion": "git push && git push --tags"
+  },
+  "author": "pierrecourpron@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {
+    "typescript": "4.6.2"
+  }
+}
